@@ -15,7 +15,8 @@ THEME = u"/Users/markus/Development/pelican-octopress-theme"
 FILES_TO_COPY = (
         ('extra/CNAME', 'CNAME'),
         ('extra/.nojekyll', '.nojekyll'),
-        ('extra/favicon.ico', 'favicon.ico'),)
+        ('extra/favicon.ico', 'favicon.ico'),
+        ('extra/favicon.png', 'favicon.png'))
 
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
