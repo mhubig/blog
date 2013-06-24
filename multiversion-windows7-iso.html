@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>HowTo create a multiversion Windows 7 ISO-Image on Mac</title>
+  <meta name="author" content="Markus Hubig">
+
+    
+  
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://mhubig.de/favicon.png" rel="icon">
+  <link href="http://mhubig.de/theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+  <script src="http://mhubig.de/theme/js/modernizr-2.0.js"></script>
+  <script src="http://mhubig.de/theme/js/ender.js"></script>
+  <script src="http://mhubig.de/theme/js/octopress.js" type="text/javascript"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head><body>
+  <header role="banner"><hgroup>
+  <h1><a href="http://mhubig.de/">admin punk and python junk ...</a></h1>
+  </hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://mhubig.de/" rel="subscribe-rss">RSS</a></li>
+  </ul>
+
+<!-- TODO: add search here
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:http://mhubig.de" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+-->
+
+<ul class="main-navigation">
+  <li><a href="http://mhubig.de/">Blog</a></li>
+            <!-- TODO: add categories here? -->
+  </ul></nav>
+  <div id="main">
+    <div id="content">
+      <div>
+  <article class="hentry" role="article">
+    <header>
+          <h1 class="entry-title">HowTo create a multiversion Windows 7 ISO-Image on Mac</h1>
+          <p class="meta"><time datetime="2013-06-20T00:00:00" pubdate>Do 20 Juni 2013</time></p>
+</header>
+
+  <div class="entry-content"><ol>
+<li>
+<p>Use Homebrew to install&nbsp;mkisofs:</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">brew</span> <span class="n">install</span> <span class="n">cdrtools</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Create a new&nbsp;directory:</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">mkdir</span> <span class="n">win7</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">win7</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Download the Windows 7 <span class="caps">DE</span> <span class="caps">SP1</span>&nbsp;<span class="caps">ISO</span>-Image:</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//msft.digitalrivercontent.net/win/X17-24289.iso (x64)</span>
+<span class="err">$</span> <span class="n">wget</span> <span class="n">http</span><span class="o">:</span><span class="c1">//msft.digitalrivercontent.net/win/X17-24288.iso (x86)</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Mount the <span class="caps">ISO</span>-Image and copy it&#8217;s content to&nbsp;disk:</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">hdiutil</span> <span class="n">mount</span> <span class="n">X17</span><span class="o">-</span><span class="mf">24289.</span><span class="n">iso</span>
+<span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">disk4</span>  <span class="o">/</span><span class="n">Volumes</span><span class="o">/</span><span class="n">GRMCPRXFRER_DE_DVD</span>
+<span class="err">$</span> <span class="n">mkdir</span> <span class="n">copy</span>
+<span class="err">$</span> <span class="n">cp</span> <span class="o">-</span><span class="n">a</span> <span class="o">/</span><span class="n">Volumes</span><span class="o">/</span><span class="n">GRMCPRXFRER_DE_DVD</span><span class="o">/*</span> <span class="n">copy</span><span class="o">/</span>
+<span class="err">$</span> <span class="n">cd</span> <span class="n">copy</span><span class="o">/</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Delete the <code>ei.cfg</code> file:</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">sources</span><span class="o">/</span><span class="n">ei</span><span class="p">.</span><span class="n">cfg</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>And make a new and bootable&nbsp;<span class="caps">ISO</span>-Image:</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">mkisofs</span> <span class="o">-</span><span class="n">o</span> <span class="p">..</span><span class="o">/</span><span class="n">win7</span><span class="p">.</span><span class="n">iso</span> <span class="o">-</span><span class="n">b</span> <span class="n">boot</span><span class="o">/</span><span class="n">etfsboot</span><span class="p">.</span><span class="n">com</span> <span class="o">-</span><span class="n">no</span><span class="o">-</span><span class="n">emul</span><span class="o">-</span><span class="n">boot</span> \
+  <span class="o">-</span><span class="n">c</span> <span class="n"><span class="caps">BOOT</span></span><span class="p">.</span><span class="n"><span class="caps">CAT</span></span> <span class="o">-</span><span class="n">iso</span><span class="o">-</span><span class="n">level</span> <span class="mi">2</span> <span class="o">-</span><span class="n">udf</span> <span class="o">-</span><span class="n">J</span> <span class="o">-</span><span class="n">l</span> <span class="o">-</span><span class="n">D</span> <span class="o">-</span><span class="n">N</span> <span class="o">-</span><span class="n">joliet</span><span class="o">-</span><span class="kt">long</span> \
+  <span class="o">-</span><span class="n">relaxed</span><span class="o">-</span><span class="n">filenames</span> <span class="p">.</span>
+<span class="err">$</span> <span class="n">cd</span> <span class="p">..</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Now burn it to a <span class="caps">DVD</span>&nbsp;with:</p>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">hdiutil</span> <span class="n">burn</span> <span class="n">win7</span><span class="p">.</span><span class="n">iso</span>
+</pre></div>
+
+
+</li>
+</ol></div>
+    <footer>
+      <p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">Markus Hubig</span>
+  </span>
+  <time datetime="2013-06-20T00:00:00" pubdate>Do 20 Juni 2013</time>    <span class="categories">
+        <a class="category" href="http://mhubig.de/tag/windows7.html">windows7</a>
+        <a class="category" href="http://mhubig.de/tag/installation.html">installation</a>
+      </span>
+  </p>    </footer>
+  </article>
+
+    <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+  </div>
+      <aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+            <li class="post">
+          <a href="http://mhubig.de/multiversion-windows7-iso.html">HowTo create a multiversion Windows 7 ISO-Image on Mac</a>
+      </li>
+            <li class="post">
+          <a href="http://mhubig.de/samba-openldap-nis.html">Install and setup Samba and OpenLDAP</a>
+      </li>
+          </ul>
+  </section>
+    <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+              <li><a href="http://mhubig.de/category/administration.html">administration</a></li>
+          </ul>
+  </section>
+   
+
+  <section>
+  <h1>Tags</h1>
+      <a href="http://mhubig.de/tag/windows7.html">windows7</a>,      <a href="http://mhubig.de/tag/samba.html">samba</a>,      <a href="http://mhubig.de/tag/installation.html">installation</a>,      <a href="http://mhubig.de/tag/ldap.html">ldap</a>    </section>
+
+    
+    <section>
+        <h1>Social</h2>
+        <ul>
+            <li><a href="http://mhubig.de/" type="application/rss+xml" rel="alternate">RSS</a></li>
+                    <li><a href="http://twitter.com/mhubig" target="_blank">twitter</a></li>
+                    <li><a href="http://bitbucket.org/mhubig" target="_blank">bitbucket</a></li>
+                    <li><a href="http://github.com/mhubig" target="_blank">github</a></li>
+                </ul>
+    </section>
+      <section>
+        <h1>Blogroll</h2>
+        <ul>
+                    <li><a href="http://imko.de" target="_blank">IMKO GmbH</a></li>
+                    <li><a href="http://python.org/" target="_blank">Python</a></li>
+                    <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+                </ul>
+    </section>
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Markus Hubig -
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+      <script type="text/javascript">
+	    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+	    try {
+	        var pageTracker = _gat._getTracker("UA-38038655-1");
+	    pageTracker._trackPageview();
+	    } catch(err) {}
+	</script>
+	<script type="text/javascript">
+	            var disqus_identifier = 'http://mhubig.de/multiversion-windows7-iso.html';
+          var disqus_url = 'http://mhubig.de/multiversion-windows7-iso.html';
+	  var disqus_title = 'HowTo create a multiversion Windows 7 <span class="caps">ISO</span>-Image on&nbsp;Mac';
+	  	  var disqus_shortname = 'mhubig';
+	  (function() {
+	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	   })();
+	</script>
+</body>
+</html>
