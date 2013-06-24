@@ -12,7 +12,9 @@ DEFAULT_LANG = u'en'
 DEFAULT_PAGINATION = 10
 
 THEME = u"/Users/markus/Development/pelican-octopress-theme"
-FILES_TO_COPY = (('extra/CNAME', 'CNAME'),)
+FILES_TO_COPY = (
+        ('extra/CNAME', 'CNAME'),
+        ('extra/.nojekyll', '.nojekyll'))
 
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
