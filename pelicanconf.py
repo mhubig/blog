@@ -18,12 +18,12 @@ THEME = u"/Users/markus/Development/pelican-octopress-theme"
 # GITHUB_SKIP_FORK = True
 # GITHUB_SHOW_USER_LINK = False
 
-FEED_ALL_ATOM = u'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = u'feeds/%s.atom.xml'
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
 
 TYPOGRIFY = True
 DELETE_OUTPUT_DIRECTORY = True
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 
 # Blogroll
 LINKS =  (('IMKO GmbH', 'http://imko.de'),
@@ -36,8 +36,8 @@ SOCIAL = (('twitter', 'http://twitter.com/mhubig'),
           ('github', 'http://github.com/mhubig'),)
 
 # global metadata to all the contents
-DEFAULT_METADATA = (('administration', 'linux'),
-                    ('python',          'punk'),)
+#DEFAULT_METADATA = (('administration', 'linux'),
+#                    ('python',          'punk'),)
 
 # path-specific metadata
 EXTRA_PATH_METADATA = {
@@ -47,8 +47,3 @@ EXTRA_PATH_METADATA = {
 # static paths will be copied without parsing their contents
 STATIC_PATHS = ['extra/robots.txt',]
 
-# Following items are often useful when publishing
-GITHUB_URL = u"http://github.com/mhubig/"
-TWITTER_USERNAME = u"mhubig"
-DISQUS_SITENAME = u"mhubig"
-GOOGLE_ANALYTICS = u"UA-38038655-1"
