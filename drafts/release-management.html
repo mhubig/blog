@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Release Management Manifest</title>
+  <meta name="author" content="Markus Hubig">
+
+    
+  
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://mhubig.de/favicon.png" rel="icon">
+  <link href="http://mhubig.de/theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+  <script src="http://mhubig.de/theme/js/modernizr-2.0.js"></script>
+  <script src="http://mhubig.de/theme/js/ender.js"></script>
+  <script src="http://mhubig.de/theme/js/octopress.js" type="text/javascript"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head><body>
+  <header role="banner"><hgroup>
+  <h1><a href="http://mhubig.de/">admin punk and python junk ...</a></h1>
+  </hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://mhubig.de/" rel="subscribe-rss">RSS</a></li>
+  </ul>
+
+<!-- TODO: add search here
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:http://mhubig.de" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+-->
+
+<ul class="main-navigation">
+  <li><a href="http://mhubig.de/">Blog</a></li>
+            <!-- TODO: add categories here? -->
+  </ul></nav>
+  <div id="main">
+    <div id="content">
+      <div>
+  <article class="hentry" role="article">
+    <header>
+          <h1 class="entry-title">Release Management Manifest</h1>
+          <p class="meta"><time datetime="2013-06-25T00:00:00" pubdate>Di 25 Juni 2013</time></p>
+</header>
+
+  <div class="entry-content"><div class="highlight"><pre>Author: Markus Hubig
+Date: 2013-06-25
+Draft: 0.1.0
+</pre></div>
+
+
+<h3>Vorwort</h3>
+<p>Im Moment besteht das Problem, dass es sehr viele unterschiedliche Ansätze
+dafür gibt, wo und wie Releases unserer Softwarepackete, Firmware Dateien
+und Manuals abgelegt werden. Das hat in letzter Zeit immer wieder zu Problemen
+geführt. Deswegen haben wir (<a href="mailto:mhubig@imko.de">Markus</a>,
+<a href="mailto:ntj@imko.de">Nicholas</a>, <a href="mailto:so@imko.de">Steven</a> und
+<a href="mailto:zp@imko.de">Zhen</a>) uns ein einfaches Schema zur Ablage und Benennung
+überlegt und uns auf diese als Standart&nbsp;geeinigt.</p>
+<h3>Was ist&nbsp;betroffen</h3>
+<p>Das neue Release-Schema gilt für alle Software Packete, Firmware Dateien,
+Hardware Pläne und Protokoll&nbsp;Manuals.</p>
+<h3>Das&nbsp;Release-Schema</h3>
+<ol>
+<li>
+<p><strong>Zuständigkeit</strong></p>
+<p>Jeder Entwickler ist für das Release Mangement seiner Software selbst&nbsp;verantwortlich!</p>
+</li>
+<li>
+<p><strong>Zentraler Ort für die&nbsp;Ablage</strong></p>
+<p>Der Zentrale Ort für die Ablage der Reseases ist von jetzt an die
+<strong>Dropbox</strong>. Und zwar folgende&nbsp;Ordner:</p>
+<div class="highlight"><pre><span class="go">Software: Dropbox/<span class="caps">IMKO</span> GmbH (extern)/Software</span>
+<span class="go">Firmware: Dropbox/<span class="caps">IMKO</span> GmbH (extern)/Firmware</span>
+<span class="go">Hardware: Dropbox/<span class="caps">IMKO</span> GmbH (extern)/Hardware</span>
+<span class="go">Protocol: Dropbox/<span class="caps">IMKO</span> GmbH (extern)/Protocol</span>
+</pre></div>
+
+
+</li>
+<li>
+<p><strong>Namensschema</strong></p>
+<p>Unterhalb der oben genannten Ordner werden die Dateien nach folgendem
+Schema benannt und abgelegt (mit Beispielen). Dabei halten wir uns bei den
+Versionsnummern an das in [Semantic Versioning 2.0.0]
+(http://semver.org/spec/v2.0.0.html) vorgeschlagene&nbsp;Schema.</p>
+<div class="highlight"><pre>Kategorie/Name/Name_000.000.000.ext
+--------- ---- ---- --- --- --- ---
+|         |    |    |   |   |   |
+|         |    |    |   |   |   `- Extention (exe, pdf, h86, hex, ...)
+|         |    |    |   |   `- PATCH (wird bei Bugfixes hochgezählt)
+|         |    |    |   `- MINOR (wird bei neuen Features hochgezählt)
+|         |    |    `- MAJOR (bei inkompatiblen API Änderungen)
+|         |    `- Name der Software (Ohne _ , . und Lehrzeichen)
+|         `- Name der Software (Ohne _ , . und Lehrzeichen)
+`- Kategorie (Software, Firmware, Hardware, Protocol)
+</pre></div>
+
+
+<p><strong>Beispiele:</strong></p>
+<div class="highlight"><pre><span class="go">Software/Trime-Tool/Trime-Tool_0.18.9.msi</span>
+
+<span class="go">Firmware/Trime-<span class="caps">SONO</span>/Trime-SONO_2.06.06.13.h86</span>
+
+<span class="go">Protocol/IMPBus2-<span class="caps">PICO</span>/IMPBus2-PICO_2.25.0.pdf</span>
+
+<span class="go">Protocol/IMPBus2-<span class="caps">SONO</span>/IMPBus2-SONO_1.3.0.pdf</span>
+
+<span class="go">Protocol/<span class="caps">SDI12</span>-<span class="caps">PICO</span>/<span class="caps">SDI12</span>-PICO_0.1.1.pdf</span>
+
+<span class="go">Hardware/Trime-3L/Trime-3L_15.1.0/Trime-3L_15.1.0.sch</span>
+<span class="go">Hardware/Trime-3L/Trime-3L_15.1.0/Trime-3L_15.1.0.brd</span>
+</pre></div>
+
+
+</li>
+<li>
+<p><strong>Changelog</strong></p>
+<p>In jedem Namens-Ordner (e.g. <code>Software/Trime-Tool</code>) muss sich eine
+<code>Changelog.txt</code> genannte Datei befinden, in der für jedes neue Release
+ein Eintrag hinzugefügt wird, der die Änderungen zur vorhergehenden
+Version&nbsp;zusammenfasst.</p>
+<p>Dabei ist folgendes Format&nbsp;einzuhalten:</p>
+<div class="highlight"><pre><span class="n"><span class="caps">YYYY</span></span><span class="o">-</span><span class="n"><span class="caps">MM</span></span><span class="o">-</span><span class="n"><span class="caps">DD</span></span> <span class="n"><span class="caps">MAJOR</span></span><span class="p">.</span><span class="n"><span class="caps">MINOR</span></span><span class="p">.</span><span class="n"><span class="caps">PATCH</span></span><span class="p">,</span> <span class="n">Author</span> <span class="n">Name</span> <span class="o">&lt;</span><span class="n">email</span><span class="err">@</span><span class="n">address</span><span class="p">.</span><span class="n">de</span><span class="o">&gt;</span>
+
+    <span class="o">-</span> <span class="n"><span class="caps">COMPONENT</span></span><span class="o">:</span> <span class="n">additions</span>
+
+    <span class="o">+</span> <span class="n"><span class="caps">COMPONENT</span></span><span class="o">:</span> <span class="n">removals</span>
+
+    <span class="o">*</span> <span class="n"><span class="caps">COMPONENT</span></span><span class="o">:</span> <span class="n">fixes</span> <span class="n">and</span> <span class="n">miscellaneous</span> <span class="n">changes</span>
+</pre></div>
+
+
+<p>Hier ein kleines Beispiel (aus Zhen&#8217;s TrimeTool <code>VersionInfo.txt</code>):</p>
+<div class="highlight"><pre><span class="mi">2012</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mo">03</span> <span class="mf">0.18.37</span><span class="p">,</span> <span class="n">Zhen</span> <span class="n">Pei</span> <span class="o">&lt;</span><span class="n">zp</span><span class="err">@</span><span class="n">imko</span><span class="p">.</span><span class="n">de</span><span class="o">&gt;</span>
+
+    <span class="o">*</span> <span class="n"><span class="caps">FIX</span></span><span class="o">:</span> <span class="n">In</span> <span class="n">Fenster</span> <span class="s">&quot;Basic Balancing&quot;</span> <span class="n">werden</span> <span class="n">die</span> <span class="n">zweien</span> <span class="n">Parameters</span>
+        <span class="n">von</span> <span class="n"><span class="caps">TDR</span></span><span class="o">-</span><span class="n">Conduct</span> <span class="n">nach</span> <span class="n">dem</span> <span class="n">Eintippen</span> <span class="n">bleiben</span><span class="p">,</span> <span class="n">wenn</span> <span class="n">die</span> <span class="n">Software</span>
+        <span class="n">nicht</span> <span class="n">aus</span> <span class="n">ist</span><span class="p">.</span>
+
+<span class="mi">2012</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">25</span> <span class="mf">0.18.38</span><span class="p">,</span> <span class="n">Zhen</span> <span class="n">Pei</span> <span class="o">&lt;</span><span class="n">zp</span><span class="err">@</span><span class="n">imko</span><span class="p">.</span><span class="n">de</span><span class="o">&gt;</span>
+
+    <span class="o">+</span> <span class="n"><span class="caps">SERIAL</span></span> <span class="n"><span class="caps">PORT</span></span><span class="o">:</span> <span class="n">Hat</span> <span class="n">jetzt</span> <span class="n">zwei</span> <span class="n">Modes</span> <span class="n">f</span><span class="err">ü</span><span class="n">r</span> <span class="n">den</span> <span class="n">Serial</span> <span class="n">Port</span><span class="p">.</span>
+        <span class="nl">Manual:</span> <span class="n">die</span> <span class="n">Software</span> <span class="n">nutzt</span> <span class="n">den</span> <span class="n">ausgew</span><span class="err">ä</span><span class="n">hlten</span> <span class="n">Serial</span> <span class="n">Port</span><span class="p">.</span>
+        <span class="nl">Automatisch:</span> <span class="n">die</span> <span class="n">Software</span> <span class="n">sucht</span> <span class="n">den</span> <span class="n">Port</span> <span class="n">automatisch</span><span class="p">.</span>
+</pre></div>
+
+
+</li>
+</ol>
+<h3>Tipps</h3>
+<p>Wer seinen Quellcode mittels <a href="http://git-scm.com">git</a> verwaltet, kann sich die
+Einträge für das Changelog File natürlich auch aus dem <code>git log</code> holen:</p>
+<div class="highlight"><pre><span class="gp">$</span> git log release-0.8.2..<span class="caps">HEAD</span> --reverse --no-merges --pretty<span class="o">=</span>format:<span class="s1">&#39;* %s&#39;</span>
+
+<span class="go">* Adds compatibility for serial urls like &#39;loop://&#39;</span>
+<span class="go">* Fixes the measure_mode bug!</span>
+</pre></div></div>
+    <footer>
+      <p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">Markus Hubig</span>
+  </span>
+  <time datetime="2013-06-25T00:00:00" pubdate>Di 25 Juni 2013</time>    <span class="categories">
+        <a class="category" href="http://mhubig.de/tag/git.html">git</a>
+        <a class="category" href="http://mhubig.de/tag/release-management.html">release management</a>
+      </span>
+  </p>    </footer>
+  </article>
+
+    <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+  </div>
+      <aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+            <li class="post">
+          <a href="http://mhubig.de/multiversion-windows7-iso.html">HowTo create a multiversion Windows 7 ISO-Image on Mac</a>
+      </li>
+            <li class="post">
+          <a href="http://mhubig.de/samba-openldap-nis.html">Install and setup Samba and OpenLDAP</a>
+      </li>
+          </ul>
+  </section>
+    <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+              <li><a href="http://mhubig.de/category/administration.html">administration</a></li>
+          </ul>
+  </section>
+   
+
+  <section>
+  <h1>Tags</h1>
+      <a href="http://mhubig.de/tag/windows7.html">windows7</a>,      <a href="http://mhubig.de/tag/samba.html">samba</a>,      <a href="http://mhubig.de/tag/installation.html">installation</a>,      <a href="http://mhubig.de/tag/ldap.html">ldap</a>    </section>
+
+    
+    <section>
+        <h1>Social</h2>
+        <ul>
+            <li><a href="http://mhubig.de/" type="application/rss+xml" rel="alternate">RSS</a></li>
+                    <li><a href="http://twitter.com/mhubig" target="_blank">twitter</a></li>
+                    <li><a href="http://bitbucket.org/mhubig" target="_blank">bitbucket</a></li>
+                    <li><a href="http://github.com/mhubig" target="_blank">github</a></li>
+                </ul>
+    </section>
+      <section>
+        <h1>Blogroll</h2>
+        <ul>
+                    <li><a href="http://imko.de" target="_blank">IMKO GmbH</a></li>
+                    <li><a href="http://python.org/" target="_blank">Python</a></li>
+                    <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+                </ul>
+    </section>
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Markus Hubig -
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+      <script type="text/javascript">
+	    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+	    try {
+	        var pageTracker = _gat._getTracker("UA-38038655-1");
+	    pageTracker._trackPageview();
+	    } catch(err) {}
+	</script>
+	<script type="text/javascript">
+	            var disqus_identifier = 'http://mhubig.de/release-management.html';
+          var disqus_url = 'http://mhubig.de/release-management.html';
+	  var disqus_title = 'Release Management&nbsp;Manifest';
+	  	  var disqus_shortname = 'mhubig';
+	  (function() {
+	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	   })();
+	</script>
+</body>
+</html>
