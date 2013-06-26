@@ -191,6 +191,23 @@ sonofw&gt;=2.060612
 
 sonohw&gt;=1.14.6
 picohw&gt;=2.6.12
+
+sono-impbus2==1.3
+pico-impbus2==0.25
+</pre></div>
+
+
+<p>Dabei gilt, dass nicht spezifizierte Stellen wie Platzhalter&nbsp;wirken:</p>
+<div class="highlight"><pre>sono-impbus2==1.3: sono-impbus2_1.3.1   =&gt; OK
+sono-impbus2==1.3: sono-impbus2_1.3.999 =&gt; OK
+</pre></div>
+
+
+<p>Bezeichnungen können auch mehrmals genutzt werden,&nbsp;z.B.:</p>
+<div class="highlight"><pre><span class="n">pyserial</span><span class="o">&gt;=</span><span class="mf">2.5</span>
+<span class="n">pyserial</span><span class="o">&lt;=</span><span class="mf">3.0</span>
+<span class="n">pyserial</span><span class="o">!=</span><span class="mf">2.5</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">pyserial</span><span class="o">!=</span><span class="mf">2.5</span><span class="o">.</span><span class="mi">76</span>
 </pre></div>
 
 
