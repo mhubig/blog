@@ -165,7 +165,7 @@ Version&nbsp;zusammenfasst.</p>
 <p>Eine wichtige Information, die notwendig ist um Softwareprobleme zu
 vermeiden, ist die Dokumentation von Abhängikeiten. Beispiele für solche
 Abhängikeiten sind z.B. <code>implib2_0.8.5</code> benötigt <code>pyserial_2.5</code> oder neuer.
-Oder <code>SONO-Config_1.29.0</code> benötigt mindestens die <code>SONO-FW_1.140612</code> oder
+Oder <code>SONO-Config_1.29.0</code> benötigt mindestens die <code>PICO-FW_1.140612</code> oder
 die <code>SONO-FW_2.060612</code> oder&nbsp;neuer.</p>
 <p>Diese Abhänigkeiten sollen in der Datei <code>requirements.txt</code> dokumentiert
 werden. Diese Datei kann entweder in einem <em>versionierten Software Ordner</em>
@@ -178,6 +178,19 @@ abgelegt werden&nbsp;&#8230;</p>
 <p>&#8230; oder selbst <em>versioniert</em>&nbsp;werden.</p>
 <div class="highlight"><pre><span class="go">Software/<span class="caps">SONO</span>-Config/<span class="caps">SONO</span>-Config_1.29.0.msi</span>
 <span class="go">Software/<span class="caps">SONO</span>-Config/requirements_1.29.0.txt</span>
+</pre></div>
+
+
+<p>Diese Datei beinhaltet dann für jede Abhänigkeit eine Zeile. Diese Zeilen
+bestehen aus der Bezeichnug der Abhänigket, einem relationalen Operator
+(<code>==</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>!=</code>) und der Bezugs-Version.&nbsp;Beispiele:</p>
+<div class="highlight"><pre>pyserial&gt;=2.5
+
+picofw&gt;=1.140612
+sonofw&gt;=2.060612
+
+sonohw&gt;=1.14.6
+picohw&gt;=2.6.12
 </pre></div>
 
 
