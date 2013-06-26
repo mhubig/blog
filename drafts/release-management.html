@@ -57,7 +57,7 @@
 
   <div class="entry-content"><div class="highlight"><pre>Author: Markus Hubig
 Date: 2013-06-26
-Draft: 0.1.10
+Draft: 0.1.11
 </pre></div>
 
 
@@ -100,7 +100,7 @@ vorgeschlagene&nbsp;Schema.</p>
 <div class="highlight"><pre>                   ,----- Trennzeichen zwischen Name und Version
                    |
                    V
-Kategorie/Name/Name_000.000.000.ext
+Kategorie/Name/name_000.000.000.ext
 --------- ---- ---- --- --- --- ---
 |         |    |    |   |   |   |
 |         |    |    |   |   |   `- Extention (exe, pdf, h86, hex, ...)
@@ -113,8 +113,18 @@ Kategorie/Name/Name_000.000.000.ext
 </pre></div>
 
 
+<p>Besteht das Release aus mehr als einer Datei, kann natürlich auch alles in
+einem <em>versionierten Ordner</em> abgelegt werden. Die Releasedatei <strong>muss</strong>
+aber natürlich trotz allem <em>versioniert</em>&nbsp;sein!</p>
+<div class="highlight"><pre><span class="n">Kategorie</span><span class="o">/</span><span class="n">Name</span><span class="o">/</span><span class="n">Name_000</span><span class="mf">.000.000</span><span class="o">/</span><span class="n">name_000</span><span class="mf">.000.000</span><span class="p">.</span><span class="n">ext</span>
+<span class="n">Kategorie</span><span class="o">/</span><span class="n">Name</span><span class="o">/</span><span class="n">Name_000</span><span class="mf">.000.000</span><span class="o">/</span><span class="n">extra</span><span class="o">-</span><span class="n">lib</span><span class="p">.</span><span class="n">ext</span>
+<span class="n">Kategorie</span><span class="o">/</span><span class="n">Name</span><span class="o">/</span><span class="n">Name_000</span><span class="mf">.000.000</span><span class="o">/</span><span class="n">image</span><span class="p">.</span><span class="n">ext</span>
+<span class="n">Kategorie</span><span class="o">/</span><span class="n">Name</span><span class="o">/</span><span class="n">Name_000</span><span class="mf">.000.000</span><span class="o">/</span><span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
+</pre></div>
+
+
 <p><strong>Beispiele:</strong></p>
-<div class="highlight"><pre><span class="go">Software/Trime-Tool/Trime-Tool_0.18.9.msi</span>
+<div class="highlight"><pre><span class="go">Software/Trime-Tool/Trime-Tool_0.18.9/Trime-Tool_0.18.9.msi</span>
 
 <span class="go">Firmware/Trime-<span class="caps">SONO</span>/Trime-SONO_2.06.06.13.h86</span>
 
