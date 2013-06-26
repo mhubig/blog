@@ -57,7 +57,7 @@
 
   <div class="entry-content"><div class="highlight"><pre>Author: Markus Hubig
 Date: 2013-06-26
-Draft: 0.1.12
+Draft: 0.1.13
 </pre></div>
 
 
@@ -172,6 +172,16 @@ Version&nbsp;zusammenfasst.</p>
 </pre></div>
 
 
+<p><strong>Tipp:</strong> Wer seinen Quellcode mittels <a href="http://git-scm.com">git</a> verwaltet,
+kann sich die Einträge für das Changelog File ganz einfach mit Hilfe von
+<code>git log</code> erzeugen:</p>
+<div class="highlight"><pre><span class="gp">$</span> git log release-0.8.2..<span class="caps">HEAD</span> --reverse --no-merges --pretty<span class="o">=</span>format:<span class="s1">&#39;* %s&#39;</span>
+
+<span class="go">* Adds compatibility for serial urls like &#39;loop://&#39;</span>
+<span class="go">* Fixes the measure_mode bug!</span>
+</pre></div>
+
+
 </li>
 <li>
 <p><strong>Abhänigkeiten</strong></p>
@@ -225,15 +235,7 @@ bestehen aus der Bezeichnug der Abhänigket, einem relationalen Operator
 
 
 </li>
-</ol>
-<h3>Tipps</h3>
-<p>Wer seinen Quellcode mittels <a href="http://git-scm.com">git</a> verwaltet, kann sich die
-Einträge für das Changelog File natürlich auch aus dem <code>git log</code> holen:</p>
-<div class="highlight"><pre><span class="gp">$</span> git log release-0.8.2..<span class="caps">HEAD</span> --reverse --no-merges --pretty<span class="o">=</span>format:<span class="s1">&#39;* %s&#39;</span>
-
-<span class="go">* Adds compatibility for serial urls like &#39;loop://&#39;</span>
-<span class="go">* Fixes the measure_mode bug!</span>
-</pre></div></div>
+</ol></div>
     <footer>
       <p class="meta">
   <span class="byline author vcard">
