@@ -6,7 +6,6 @@ Slug: release-management
 Author: Markus Hubig
 Summary: Ein Vorschlag für ein einfaches Release Management
          Schema für die IMKO GmbH.
-status: draft
 
     :::text
     Author: Markus Hubig
