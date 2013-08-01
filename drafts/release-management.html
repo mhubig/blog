@@ -125,15 +125,10 @@ aber natürlich trotz allem <em>versioniert</em>&nbsp;sein!</p>
 
 <p><strong>Beispiele:</strong></p>
 <div class="highlight"><pre><span class="go">Software/Trime-Tool/Trime-Tool_0.18.9/Trime-Tool_0.18.9.msi</span>
-
 <span class="go">Firmware/Trime-<span class="caps">SONO</span>/Trime-SONO_2.6.6.13.h86</span>
-
 <span class="go">Protocol/IMPBus2-<span class="caps">PICO</span>/IMPBus2-PICO_2.25.0.pdf</span>
-
 <span class="go">Protocol/IMPBus2-<span class="caps">SONO</span>/IMPBus2-SONO_1.3.0.pdf</span>
-
 <span class="go">Protocol/<span class="caps">SDI12</span>-<span class="caps">PICO</span>/<span class="caps">SDI12</span>-PICO_1.1.0.pdf</span>
-
 <span class="go">Hardware/Trime-3L/Trime-3L_15.1.0/Trime-3L_15.1.0.sch</span>
 <span class="go">Hardware/Trime-3L/Trime-3L_15.1.0/Trime-3L_15.1.0.brd</span>
 </pre></div>
@@ -236,6 +231,60 @@ bestehen aus der Bezeichnug der Abhänigket, einem relationalen Operator
 </pre></div>
 
 
+</li>
+<li>
+<p><strong>Checksum</strong></p>
+<p>Um die Korrecktheit der Dateien verifizierbar zu machen, ist es nötig für
+Jede Release-Datei eine Checksummen zu berechnen und zusammen mit dieser
+abzuspeichern. <em>State of the Art</em> is heutzutage eine mit dem
+<a href="https://de.wikipedia.org/wiki/SHA-2">sha512</a> Algorythmus berechnete&nbsp;Checksumme.</p>
+<h4>Erzeugen und Verifizieren der Checksumme unter&nbsp;Windows</h4>
+<p>Unter Windows kann eine sha512 Checksumme ganz einfach mit dem
+<a href="http://www.krylack.com/file-checksum-tool/">File Checksum Tool</a> erzeugt&nbsp;werden:</p>
+<p><img alt="" src="http://www.krylack.com/images/file-checksum-tool-screenshot.jpg" /></p>
+<h4>Erzeugen und Verifizieren der Checksumme unter&nbsp;Linux</h4>
+<div class="highlight"><pre><span class="gp">$</span> sha512sum Pico-BT_1.18.0.elf &gt; Pico-BT_1.18.0.elf.sha512
+<span class="gp">$</span> sha512sum -c  Pico-BT_1.18.0.elf.sha512
+<span class="go">Pico-BT_1.18.0.elf: <span class="caps">OK</span></span>
+</pre></div>
+
+
+<p>Oder für einen ganzen&nbsp;Ordner:</p>
+<div class="highlight"><pre><span class="gp">$</span> sha512sum <span class="caps">SONO</span>-View_1.0.0/* &gt; <span class="caps">SONO</span>-View_1.0.0.sha512
+<span class="gp">$</span> sha512sum -c <span class="caps">SONO</span>-View_1.0.0.sha512
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/AVRootloader.dev: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/AVRootloader.exe: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/AVRootloader.ini: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/SView_APP_1.0.0.hex: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/SView_IBT_1.0.0.hex: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/requirements.txt: <span class="caps">OK</span></span>
+</pre></div>
+
+
+<h4>Erzeugen und Verifizieren der Checksumme unter Mac <span class="caps">OS</span>&nbsp;X</h4>
+<div class="highlight"><pre><span class="gp">$</span> shasum -a 512 Pico-BT_1.18.0.elf &gt; Pico-BT_1.18.0.elf.sha512
+<span class="gp">$</span> shasum -a 512 -c Pico-BT_1.18.0.elf.sha512
+<span class="go">Pico-BT_1.18.0.elf: <span class="caps">OK</span></span>
+</pre></div>
+
+
+<p>Oder für einen ganzen&nbsp;Ordner:</p>
+<div class="highlight"><pre><span class="gp">$</span> shasum -a 512 <span class="caps">SONO</span>-View_1.0.0/* &gt; <span class="caps">SONO</span>-View_1.0.0.sha512
+<span class="gp">$</span> shasum -a 512 -c <span class="caps">SONO</span>-View_1.0.0.sha512
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/AVRootloader.dev: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/AVRootloader.exe: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/AVRootloader.ini: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/SView_APP_1.0.0.hex: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/SView_IBT_1.0.0.hex: <span class="caps">OK</span></span>
+<span class="go"><span class="caps">SONO</span>-View_1.0.0/requirements.txt: <span class="caps">OK</span></span>
+</pre></div>
+
+
+<h4>Namensschema für die Checksummen&nbsp;Datei</h4>
+<ul>
+<li>Für eine einzelne Datei: <code>&lt;filename&gt;.&lt;ext&gt;.sha512</code></li>
+<li>Für einen ganzen Ordner: <code>&lt;directoryname&gt;.sha512</code></li>
+</ul>
 </li>
 </ol></div>
     <footer>
