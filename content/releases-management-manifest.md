@@ -198,7 +198,7 @@ Hardware Pläne und Protokoll Manuals.
     [File Checksum Tool](http://www.krylack.com/file-checksum-tool/) erzeugt
     werden:
 
-    ![](http://www.krylack.com/images/file-checksum-tool-screenshot.jpg)
+    ![screenshot](http://www.krylack.com/images/file-checksum-tool-screenshot.jpg)
 
     #### Erzeugen und Verifizieren der Checksumme unter Linux
 
