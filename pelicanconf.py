@@ -10,18 +10,28 @@ SITEURL = u'http://localhost:8000'
 TIMEZONE = u'Europe/Paris'
 DEFAULT_LANG = u'en'
 DEFAULT_PAGINATION = 10
-
 THEME = u"/Users/markus/Development/pelican-octopress-theme"
-FILES_TO_COPY = (
-        ('extra/CNAME', 'CNAME'),
-        ('extra/keybase.txt'),
-        ('extra/.nojekyll', '.nojekyll'),
-        ('extra/favicon.ico', 'favicon.ico'),
-        ('extra/favicon.png', 'favicon.png'))
+
+# static paths will be copied without parsing their contents
+STATIC_PATHS = [
+    'extra/CNAME',
+    'extra/keybase.txt',
+    'extra/.nojekyll',
+    'extra/favicon.ico',
+    'extra/favicon.png',
+]
+
+# path-specific metadata
+EXTRA_PATH_METADATA = {
+    'extra/CNAME':       {'path': 'CNAME'},
+    'extra/keybase.txt': {'path': 'keybase.txt'},
+    'extra/.nojekyll':   {'path': '.nojekyll'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/favicon.png': {'path': 'favicon.png'},
+    }
 
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
-
 TYPOGRIFY = True
 DELETE_OUTPUT_DIRECTORY = True
 RELATIVE_URLS = True
