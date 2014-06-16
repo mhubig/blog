@@ -14,6 +14,7 @@ DEFAULT_PAGINATION = 10
 THEME = u"/Users/markus/Development/pelican-octopress-theme"
 FILES_TO_COPY = (
         ('extra/CNAME', 'CNAME'),
+        ('extra/keybase.txt'),
         ('extra/.nojekyll', '.nojekyll'),
         ('extra/favicon.ico', 'favicon.ico'),
         ('extra/favicon.png', 'favicon.png'))
@@ -34,4 +35,3 @@ LINKS =  (('IMKO GmbH', 'http://imko.de'),
 SOCIAL = (('twitter', 'http://twitter.com/mhubig'),
           ('bitbucket', 'http://bitbucket.org/mhubig'),
           ('github', 'http://github.com/mhubig'),)
-
