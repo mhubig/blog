@@ -26,10 +26,10 @@ Hardware Pläne und Protokoll&amp;nbsp;Manuals.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Zentraler Ort für die&amp;nbsp;Ablage&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Der Zentrale Ort für die Ablage der Reseases ist von jetzt an die
 &lt;strong&gt;Dropbox&lt;/strong&gt;. Und zwar folgende&amp;nbsp;Ordner:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="go"&gt;Software: Dropbox/&lt;span class="caps"&gt;IMKO&lt;/span&gt; GmbH (extern)/Software&lt;/span&gt;
-&lt;span class="go"&gt;Firmware: Dropbox/&lt;span class="caps"&gt;IMKO&lt;/span&gt; GmbH (extern)/Firmware&lt;/span&gt;
-&lt;span class="go"&gt;Hardware: Dropbox/&lt;span class="caps"&gt;IMKO&lt;/span&gt; GmbH (extern)/Hardware&lt;/span&gt;
-&lt;span class="go"&gt;Protocol: Dropbox/&lt;span class="caps"&gt;IMKO&lt;/span&gt; GmbH (extern)/Protocol&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="go"&gt;Software: Dropbox/IMKO GmbH (extern)/Software&lt;/span&gt;
+&lt;span class="go"&gt;Firmware: Dropbox/IMKO GmbH (extern)/Firmware&lt;/span&gt;
+&lt;span class="go"&gt;Hardware: Dropbox/IMKO GmbH (extern)/Hardware&lt;/span&gt;
+&lt;span class="go"&gt;Protocol: Dropbox/IMKO GmbH (extern)/Protocol&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -69,10 +69,10 @@ aber natürlich trotz allem &lt;em&gt;versioniert&lt;/em&gt;&amp;nbsp;sein!&lt;/
 
 &lt;p&gt;&lt;strong&gt;Beispiele:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="go"&gt;Software/Trime-Tool/Trime-Tool_0.18.9/Trime-Tool_0.18.9.msi&lt;/span&gt;
-&lt;span class="go"&gt;Firmware/Trime-&lt;span class="caps"&gt;SONO&lt;/span&gt;/Trime-SONO_2.6.6.13.h86&lt;/span&gt;
-&lt;span class="go"&gt;Protocol/IMPBus2-&lt;span class="caps"&gt;PICO&lt;/span&gt;/IMPBus2-PICO_2.25.0.pdf&lt;/span&gt;
-&lt;span class="go"&gt;Protocol/IMPBus2-&lt;span class="caps"&gt;SONO&lt;/span&gt;/IMPBus2-SONO_1.3.0.pdf&lt;/span&gt;
-&lt;span class="go"&gt;Protocol/&lt;span class="caps"&gt;SDI12&lt;/span&gt;-&lt;span class="caps"&gt;PICO&lt;/span&gt;/&lt;span class="caps"&gt;SDI12&lt;/span&gt;-PICO_1.1.0.pdf&lt;/span&gt;
+&lt;span class="go"&gt;Firmware/Trime-SONO/Trime-SONO_2.6.6.13.h86&lt;/span&gt;
+&lt;span class="go"&gt;Protocol/IMPBus2-PICO/IMPBus2-PICO_2.25.0.pdf&lt;/span&gt;
+&lt;span class="go"&gt;Protocol/IMPBus2-SONO/IMPBus2-SONO_1.3.0.pdf&lt;/span&gt;
+&lt;span class="go"&gt;Protocol/SDI12-PICO/SDI12-PICO_1.1.0.pdf&lt;/span&gt;
 &lt;span class="go"&gt;Hardware/Trime-3L/Trime-3L_15.1.0/Trime-3L_15.1.0.sch&lt;/span&gt;
 &lt;span class="go"&gt;Hardware/Trime-3L/Trime-3L_15.1.0/Trime-3L_15.1.0.brd&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -86,26 +86,26 @@ aber natürlich trotz allem &lt;em&gt;versioniert&lt;/em&gt;&amp;nbsp;sein!&lt;/
 ein Eintrag hinzugefügt wird, der die Änderungen zur vorhergehenden
 Version&amp;nbsp;zusammenfasst.&lt;/p&gt;
 &lt;p&gt;Dabei ist folgendes Format&amp;nbsp;einzuhalten:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;YYYY&lt;/span&gt;&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;MM&lt;/span&gt;&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;DD&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;MAJOR&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;MINOR&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;PATCH&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Author&lt;/span&gt; &lt;span class="n"&gt;Name&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;YYYY&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;MM&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;DD&lt;/span&gt; &lt;span class="n"&gt;MAJOR&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;MINOR&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PATCH&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Author&lt;/span&gt; &lt;span class="n"&gt;Name&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 
-    &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;COMPONENT&lt;/span&gt;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;additions&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;COMPONENT&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;additions&lt;/span&gt;
 
-    &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;COMPONENT&lt;/span&gt;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;removals&lt;/span&gt;
+    &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;COMPONENT&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;removals&lt;/span&gt;
 
-    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;COMPONENT&lt;/span&gt;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;fixes&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;miscellaneous&lt;/span&gt; &lt;span class="n"&gt;changes&lt;/span&gt;
+    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;COMPONENT&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;fixes&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;miscellaneous&lt;/span&gt; &lt;span class="n"&gt;changes&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Hier ein kleines Beispiel (aus Zhen&amp;#8217;s TrimeTool &lt;code&gt;VersionInfo.txt&lt;/code&gt;):&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mo"&gt;04&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mo"&gt;03&lt;/span&gt; &lt;span class="mf"&gt;0.18.37&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Zhen&lt;/span&gt; &lt;span class="n"&gt;Pei&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;zp&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;imko&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 
-    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FIX&lt;/span&gt;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="n"&gt;Fenster&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Basic Balancing&amp;quot;&lt;/span&gt; &lt;span class="n"&gt;werden&lt;/span&gt; &lt;span class="n"&gt;die&lt;/span&gt; &lt;span class="n"&gt;zweien&lt;/span&gt; &lt;span class="n"&gt;Parameters&lt;/span&gt;
-        &lt;span class="n"&gt;von&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TDR&lt;/span&gt;&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Conduct&lt;/span&gt; &lt;span class="n"&gt;nach&lt;/span&gt; &lt;span class="n"&gt;dem&lt;/span&gt; &lt;span class="n"&gt;Eintippen&lt;/span&gt; &lt;span class="n"&gt;bleiben&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wenn&lt;/span&gt; &lt;span class="n"&gt;die&lt;/span&gt; &lt;span class="n"&gt;Software&lt;/span&gt;
+    &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;FIX&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="n"&gt;Fenster&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Basic Balancing&amp;quot;&lt;/span&gt; &lt;span class="n"&gt;werden&lt;/span&gt; &lt;span class="n"&gt;die&lt;/span&gt; &lt;span class="n"&gt;zweien&lt;/span&gt; &lt;span class="n"&gt;Parameters&lt;/span&gt;
+        &lt;span class="n"&gt;von&lt;/span&gt; &lt;span class="n"&gt;TDR&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Conduct&lt;/span&gt; &lt;span class="n"&gt;nach&lt;/span&gt; &lt;span class="n"&gt;dem&lt;/span&gt; &lt;span class="n"&gt;Eintippen&lt;/span&gt; &lt;span class="n"&gt;bleiben&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wenn&lt;/span&gt; &lt;span class="n"&gt;die&lt;/span&gt; &lt;span class="n"&gt;Software&lt;/span&gt;
         &lt;span class="n"&gt;nicht&lt;/span&gt; &lt;span class="n"&gt;aus&lt;/span&gt; &lt;span class="n"&gt;ist&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
 
 &lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mo"&gt;04&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt; &lt;span class="mf"&gt;0.18.38&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Zhen&lt;/span&gt; &lt;span class="n"&gt;Pei&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;zp&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;imko&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 
-    &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;SERIAL&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PORT&lt;/span&gt;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Hat&lt;/span&gt; &lt;span class="n"&gt;jetzt&lt;/span&gt; &lt;span class="n"&gt;zwei&lt;/span&gt; &lt;span class="n"&gt;Modes&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="err"&gt;ü&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="n"&gt;den&lt;/span&gt; &lt;span class="n"&gt;Serial&lt;/span&gt; &lt;span class="n"&gt;Port&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+    &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;SERIAL&lt;/span&gt; &lt;span class="n"&gt;PORT&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Hat&lt;/span&gt; &lt;span class="n"&gt;jetzt&lt;/span&gt; &lt;span class="n"&gt;zwei&lt;/span&gt; &lt;span class="n"&gt;Modes&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="err"&gt;ü&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="n"&gt;den&lt;/span&gt; &lt;span class="n"&gt;Serial&lt;/span&gt; &lt;span class="n"&gt;Port&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
         &lt;span class="nl"&gt;Manual:&lt;/span&gt; &lt;span class="n"&gt;die&lt;/span&gt; &lt;span class="n"&gt;Software&lt;/span&gt; &lt;span class="n"&gt;nutzt&lt;/span&gt; &lt;span class="n"&gt;den&lt;/span&gt; &lt;span class="n"&gt;ausgew&lt;/span&gt;&lt;span class="err"&gt;ä&lt;/span&gt;&lt;span class="n"&gt;hlten&lt;/span&gt; &lt;span class="n"&gt;Serial&lt;/span&gt; &lt;span class="n"&gt;Port&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
         &lt;span class="nl"&gt;Automatisch:&lt;/span&gt; &lt;span class="n"&gt;die&lt;/span&gt; &lt;span class="n"&gt;Software&lt;/span&gt; &lt;span class="n"&gt;sucht&lt;/span&gt; &lt;span class="n"&gt;den&lt;/span&gt; &lt;span class="n"&gt;Port&lt;/span&gt; &lt;span class="n"&gt;automatisch&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -114,7 +114,7 @@ Version&amp;nbsp;zusammenfasst.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tipp:&lt;/strong&gt; Wer seinen Quellcode mittels &lt;a href="http://git-scm.com"&gt;git&lt;/a&gt; verwaltet,
 kann sich die Einträge für das Changelog File ganz einfach mit Hilfe von
 &lt;code&gt;git log&lt;/code&gt; erzeugen:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git log release-0.8.2..&lt;span class="caps"&gt;HEAD&lt;/span&gt; --reverse --no-merges --pretty&lt;span class="o"&gt;=&lt;/span&gt;format:&lt;span class="s1"&gt;&amp;#39;* %s&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git log release-0.8.2..HEAD --reverse --no-merges --pretty&lt;span class="o"&gt;=&lt;/span&gt;format:&lt;span class="s1"&gt;&amp;#39;* %s&amp;#39;&lt;/span&gt;
 
 &lt;span class="go"&gt;* Adds compatibility for serial urls like &amp;#39;loop://&amp;#39;&lt;/span&gt;
 &lt;span class="go"&gt;* Fixes the measure_mode bug!&lt;/span&gt;
@@ -132,16 +132,16 @@ die &lt;code&gt;SONO-FW_2.060612&lt;/code&gt; oder&amp;nbsp;neuer.&lt;/p&gt;
 &lt;p&gt;Diese Abhänigkeiten sollen in der Datei &lt;code&gt;requirements.txt&lt;/code&gt; dokumentiert
 werden. Diese Datei kann entweder in einem &lt;em&gt;versionierten Software Ordner&lt;/em&gt;
 abgelegt werden&amp;nbsp;&amp;#8230;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="go"&gt;Software/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config/ChangeLog.txt&lt;/span&gt;
-&lt;span class="go"&gt;Software/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config_1.29.0/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config_1.29.0.msi&lt;/span&gt;
-&lt;span class="go"&gt;Software/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config_1.29.0/requirements.txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="go"&gt;Software/SONO-Config/ChangeLog.txt&lt;/span&gt;
+&lt;span class="go"&gt;Software/SONO-Config/SONO-Config_1.29.0/SONO-Config_1.29.0.msi&lt;/span&gt;
+&lt;span class="go"&gt;Software/SONO-Config/SONO-Config_1.29.0/requirements.txt&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&amp;#8230; oder selbst &lt;em&gt;versioniert&lt;/em&gt;&amp;nbsp;werden.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="go"&gt;Software/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config/ChangeLog.txt&lt;/span&gt;
-&lt;span class="go"&gt;Software/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config_1.29.0.msi&lt;/span&gt;
-&lt;span class="go"&gt;Software/&lt;span class="caps"&gt;SONO&lt;/span&gt;-Config/requirements_1.29.0.txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="go"&gt;Software/SONO-Config/ChangeLog.txt&lt;/span&gt;
+&lt;span class="go"&gt;Software/SONO-Config/SONO-Config_1.29.0.msi&lt;/span&gt;
+&lt;span class="go"&gt;Software/SONO-Config/requirements_1.29.0.txt&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -162,8 +162,8 @@ bestehen aus der Bezeichnug der Abhänigket, einem relationalen Operator
 
 
 &lt;p&gt;Dabei gilt, dass nicht spezifizierte Stellen wie Platzhalter&amp;nbsp;wirken:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sono&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;impbus2&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;1.3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;sono&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;impbus2_1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;3.1&lt;/span&gt;   &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="n"&gt;sono&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;impbus2&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;1.3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;sono&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;impbus2_1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;3.999&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sono&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;impbus2&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;1.3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;sono&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;impbus2_1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;3.1&lt;/span&gt;   &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;OK&lt;/span&gt;
+&lt;span class="n"&gt;sono&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;impbus2&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;1.3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;sono&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;impbus2_1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;3.999&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;OK&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -185,42 +185,42 @@ abzuspeichern. &lt;em&gt;State of the Art&lt;/em&gt; is heutzutage eine mit dem
 &lt;h4&gt;Erzeugen und Verifizieren der Checksumme unter&amp;nbsp;Windows&lt;/h4&gt;
 &lt;p&gt;Unter Windows kann eine sha512 Checksumme ganz einfach mit dem
 &lt;a href="http://www.krylack.com/file-checksum-tool/"&gt;File Checksum Tool&lt;/a&gt; erzeugt&amp;nbsp;werden:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://www.krylack.com/images/file-checksum-tool-screenshot.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="screenshot" src="http://www.krylack.com/images/file-checksum-tool-screenshot.jpg" /&gt;&lt;/p&gt;
 &lt;h4&gt;Erzeugen und Verifizieren der Checksumme unter&amp;nbsp;Linux&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sha512sum Pico-BT_1.18.0.elf &amp;gt; Pico-BT_1.18.0.elf.sha512
 &lt;span class="gp"&gt;$&lt;/span&gt; sha512sum -c  Pico-BT_1.18.0.elf.sha512
-&lt;span class="go"&gt;Pico-BT_1.18.0.elf: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
+&lt;span class="go"&gt;Pico-BT_1.18.0.elf: OK&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Oder für einen ganzen&amp;nbsp;Ordner:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sha512sum &lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/* &amp;gt; &lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0.sha512
-&lt;span class="gp"&gt;$&lt;/span&gt; sha512sum -c &lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0.sha512
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/AVRootloader.dev: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/AVRootloader.exe: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/AVRootloader.ini: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/SView_APP_1.0.0.hex: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/SView_IBT_1.0.0.hex: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/requirements.txt: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sha512sum SONO-View_1.0.0/* &amp;gt; SONO-View_1.0.0.sha512
+&lt;span class="gp"&gt;$&lt;/span&gt; sha512sum -c SONO-View_1.0.0.sha512
+&lt;span class="go"&gt;SONO-View_1.0.0/AVRootloader.dev: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/AVRootloader.exe: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/AVRootloader.ini: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/SView_APP_1.0.0.hex: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/SView_IBT_1.0.0.hex: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/requirements.txt: OK&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h4&gt;Erzeugen und Verifizieren der Checksumme unter Mac &lt;span class="caps"&gt;OS&lt;/span&gt;&amp;nbsp;X&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; shasum -a 512 Pico-BT_1.18.0.elf &amp;gt; Pico-BT_1.18.0.elf.sha512
 &lt;span class="gp"&gt;$&lt;/span&gt; shasum -a 512 -c Pico-BT_1.18.0.elf.sha512
-&lt;span class="go"&gt;Pico-BT_1.18.0.elf: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
+&lt;span class="go"&gt;Pico-BT_1.18.0.elf: OK&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Oder für einen ganzen&amp;nbsp;Ordner:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; shasum -a 512 &lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/* &amp;gt; &lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0.sha512
-&lt;span class="gp"&gt;$&lt;/span&gt; shasum -a 512 -c &lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0.sha512
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/AVRootloader.dev: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/AVRootloader.exe: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/AVRootloader.ini: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/SView_APP_1.0.0.hex: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/SView_IBT_1.0.0.hex: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
-&lt;span class="go"&gt;&lt;span class="caps"&gt;SONO&lt;/span&gt;-View_1.0.0/requirements.txt: &lt;span class="caps"&gt;OK&lt;/span&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="gp"&gt;$&lt;/span&gt; shasum -a 512 SONO-View_1.0.0/* &amp;gt; SONO-View_1.0.0.sha512
+&lt;span class="gp"&gt;$&lt;/span&gt; shasum -a 512 -c SONO-View_1.0.0.sha512
+&lt;span class="go"&gt;SONO-View_1.0.0/AVRootloader.dev: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/AVRootloader.exe: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/AVRootloader.ini: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/SView_APP_1.0.0.hex: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/SView_IBT_1.0.0.hex: OK&lt;/span&gt;
+&lt;span class="go"&gt;SONO-View_1.0.0/requirements.txt: OK&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -246,7 +246,7 @@ abzuspeichern. &lt;em&gt;State of the Art&lt;/em&gt; is heutzutage eine mit dem
 
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Download the Windows 7 &lt;span class="caps"&gt;DE&lt;/span&gt; &lt;span class="caps"&gt;SP1&lt;/span&gt;&amp;nbsp;&lt;span class="caps"&gt;ISO&lt;/span&gt;-Image:&lt;/p&gt;
+&lt;p&gt;Download the Windows 7 &lt;span class="caps"&gt;DE&lt;/span&gt; &lt;span class="caps"&gt;SP1&lt;/span&gt; &lt;span class="caps"&gt;ISO&lt;/span&gt;-Image:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//msft.digitalrivercontent.net/win/X17-24289.iso (x64)&lt;/span&gt;
 &lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//msft.digitalrivercontent.net/win/X17-24288.iso (x86)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -272,9 +272,9 @@ abzuspeichern. &lt;em&gt;State of the Art&lt;/em&gt; is heutzutage eine mit dem
 
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;And make a new and bootable&amp;nbsp;&lt;span class="caps"&gt;ISO&lt;/span&gt;-Image:&lt;/p&gt;
+&lt;p&gt;And make a new and bootable &lt;span class="caps"&gt;ISO&lt;/span&gt;-Image:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;mkisofs&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="p"&gt;..&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;win7&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iso&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="n"&gt;boot&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etfsboot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;no&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;emul&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;boot&lt;/span&gt; \
-  &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;BOOT&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;CAT&lt;/span&gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;iso&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;level&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;udf&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;joliet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt; \
+  &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="n"&gt;BOOT&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;CAT&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;iso&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;level&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;udf&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;joliet&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt; \
   &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;relaxed&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;filenames&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;
 &lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="p"&gt;..&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -299,7 +299,7 @@ abzuspeichern. &lt;em&gt;State of the Art&lt;/em&gt; is heutzutage eine mit dem
 &lt;p&gt;Install the samba schema. The schema is found in the installed
    &lt;code&gt;samba-doc&lt;/code&gt; package. It needs to be unzipped and copied to the
    &lt;code&gt;/etc/ldap/schema&lt;/code&gt; directory&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;cp&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;share&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;samba&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;examples&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;LDAP&lt;/span&gt;&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;samba&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;schema&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gz&lt;/span&gt; \
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;cp&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;share&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;samba&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;examples&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;LDAP&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;samba&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;schema&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gz&lt;/span&gt; \
   &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ldap&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;schema&lt;/span&gt;
 &lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;gzip&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ldap&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;schema&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;samba&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;schema&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gz&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -371,12 +371,12 @@ abzuspeichern. &lt;em&gt;State of the Art&lt;/em&gt; is heutzutage eine mit dem
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Add the new&amp;nbsp;schema:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ldapadd&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Q&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;EXTERNAL&lt;/span&gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;H&lt;/span&gt; &lt;span class="n"&gt;ldapi&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;/// -f cn\=samba.ldif&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ldapadd&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Q&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="n"&gt;EXTERNAL&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;H&lt;/span&gt; &lt;span class="n"&gt;ldapi&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;/// -f cn\=samba.ldif&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;To query and view this new&amp;nbsp;schema:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ldapsearch&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Q&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;LLL&lt;/span&gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;EXTERNAL&lt;/span&gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;H&lt;/span&gt; &lt;span class="n"&gt;ldapi&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;/// -b cn=schema,cn=config &amp;#39;cn=*samba*&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ldapsearch&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Q&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;LLL&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="n"&gt;EXTERNAL&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;H&lt;/span&gt; &lt;span class="n"&gt;ldapi&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;/// -b cn=schema,cn=config &amp;#39;cn=*samba*&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -404,12 +404,12 @@ abzuspeichern. &lt;em&gt;State of the Art&lt;/em&gt; is heutzutage eine mit dem
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Use the ldapmodify utility to load the new&amp;nbsp;indices:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ldapmodify&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Q&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;EXTERNAL&lt;/span&gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;H&lt;/span&gt; &lt;span class="n"&gt;ldapi&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;/// -f samba_indices.ldif&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ldapmodify&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Q&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="n"&gt;EXTERNAL&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;H&lt;/span&gt; &lt;span class="n"&gt;ldapi&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;/// -f samba_indices.ldif&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;If all went well you should see the new indices using&amp;nbsp;ldapsearch:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ldapsearch&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Q&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;LLL&lt;/span&gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;EXTERNAL&lt;/span&gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;H&lt;/span&gt; \
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ldapsearch&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Q&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;LLL&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="n"&gt;EXTERNAL&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;H&lt;/span&gt; \
   &lt;span class="nl"&gt;ldapi:&lt;/span&gt;&lt;span class="c1"&gt;/// -b cn=config olcDatabase={1}hdb olcDbIndex&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 

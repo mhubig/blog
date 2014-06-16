@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/mhubig
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://mhubig.de
+  * I am mhubig (https://keybase.io/mhubig) on keybase.
+  * I have a public key with fingerprint 7DC8 4233 9609 18C9 369C  6D94 6A95 8B92 DD82 24C0
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "7dc84233960918c9369c6d946a958b92dd8224c0",
+            "host": "keybase.io",
+            "key_id": "6a958b92dd8224c0",
+            "uid": "b2900d45d35174d3d1c3566584339a00",
+            "username": "mhubig"
+        },
+        "service": {
+            "hostname": "mhubig.de",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1402935274,
+    "expire_in": 157680000,
+    "prev": "5d2342883c2a6e504933a04af4c5d50a5e5b35a7ee85fe351257a67eda7490d0",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.22
+Comment: https://keybase.io/crypto
+
+yMHpAnicbZF/SBRpGMd3N7V28WDTPyLOCMdVMLZldmbe+RVnYIiJ0okZBf5YZ+Z9
+3R1Od8bZ2fXHqqwYgSAmopxJeCeo1BFFcoJCHEsUJocpBUJkyl1Rl0nGYSBXoO8s
+3R9B7z8v7/f5fL/P+/A8+O6AzWXve1E3/XfyTp79z+RW1Hb+lyObcULWYDshxomf
+UOpqVMNBZOiGGjYJkeCgwjMUTQssKfh5RaBZQWGhwLCSAHhZoCDkKYpRSMJLhLSI
+5cAxshRBPlXDGn4EVIjVb/DRVEGmBJKEDIA08HMMpKFfoQHLAp7BTSUyBUaQEZaa
+EaabQ1FZDRJdXgJrMVXBWjzV+Ku6DyJs0w3N1BStCcsh09RFy2W26xbWiuTAl4CA
+rIYhHhkbYsiIqFqYEP2YVEzVSvQzJCXQgOIYL4HadNVAAdUiAMfyJD5WGxTDkQBS
+NEPxPK1QEosAyQg0LZGM1MgoAAJSAgjINJA4hHjQiPCwFOAklkNQ4hiBhNacEdQS
+1giRxt+UgjgyogbDkhk1ENF1P1mbZrO7bBnpDmtpNpfT/f8qs4MH986scLlzK4GK
+KXuyf2hBC5YvJuczQtG/pkuY//pajp1zF5929EwMfwIJtldUg4+3l8rrf59MDtxd
+1Rt2h53LHbPzz36ePJnbYTo97qr1e69/nNoYdHjk4dHR4sqXf2zccjwcdY08udDx
+bmtnxr1mK2x6lLhUfTWnc3egyOc8G79y/ePC0ZyKi+89Rn7m7OGeAfHztboZc29o
+/Hbn92U3jYnlkdolMatksfvp2Opvl59vVFc68rTKEs8p5w+ZxzfXolXL+lJm+Y1f
+T3S9qvGVDqZBbyK2PVc7VLbzIb/1kH99rLt0vLflbVt2up61M11QUFPc8O+beFEO
+6P+nMFE/uQ/VRw04
+=AUUW
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mhubig
+
+==================================================================
